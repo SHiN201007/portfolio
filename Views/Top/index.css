@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+body {
+    margin: 0px;
+    background: black;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow:scroll;
+    height: 100vh;
+}
+
+.section {
+    scroll-snap-align: start;
+}
+
+/* nav */
+.navbar {
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+}
+
+.navbar .logo,
+.navbar .menu {
+    display: inline-block;
+}
+
+.logo {
+    float: left;
+    margin-left: 70px;
+}
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    line-height: 90px;
+    font-family: 'Permanent Marker', cursive;
+    filter: drop-shadow(0px 0px 10px rgba(255,255,255,1.0));
+}
+
+.menu {
+    float: right;
+    margin-right: 50px;
+}
+.menu li {
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 50px;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    line-height: 60px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* top */
+.top_screen {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.top_image img{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat; 
+}
+
+.titleLabel {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    top: 40vh;
+    left: 29vw;
+}
+
+.titleLabel #title{
+    margin: 0px;
+    color: white;
+    letter-spacing: 40px;
+    font-size: 50px;
+    font-family: 'Permanent Marker', cursive;
+    font-style: italic;
+    filter: drop-shadow(0px 0px 10px rgba(255,255,255,1.0));
+}
+
+.titleLabel #label{
+    margin: 0px;
+    color: white;
+    letter-spacing: 40px;
+    font-size: 30px;
+    font-family: 'Noto Serif JP', serif;
+    filter: drop-shadow(0px 0px 10px rgba(255,255,255,1.0));
+}
+/* null */
+.null {
+    height: 60px;
+ }
+
+/* about */
+.about {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.about .content {
+    margin-top: 20px; 
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 80vh;
+    /* border: 1px solid white;
+    border-radius: 10px; */
+}
+
+.about .title {
+    margin: 100px 0 0 200px;
+    line-height: 80px;
+}
+.about .title p {
+    width: 300px;
+    height: 80px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    filter: drop-shadow(0px 0px 10px rgba(255,255,255,1.0));
+    font-family: 'Permanent Marker', cursive;
+}
+
+.about .image {
+    top: 200px;
+    right: 350px;
+    position: absolute;
+    filter: drop-shadow(0px 0px 10px rgba(255,255,255,1.0))
+}
+.about .image img{
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+}
+
+.about .name {
+    margin: 100px 0 0 200px;
+}
+.about .name p {
+    width: 300px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.about .text {
+    margin: 100px 0 0 250px;
+}
+.about .text p {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Noto Serif JP', serif;
+}
+
+/* skill */
+.skill {
+    width: 100vw;
+    height: 100vh;
+}
+.skill .content {
+    margin-top: 0px; 
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 90vh;
+    /* border: 1px solid white;
+    border-radius: 10px; */
+}
+
+.skill .title {
+    margin: 0px 0 0 200px;
+    line-height: 80px;
+}
+.skill .title p {
+    width: 300px;
+    height: 80px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    filter: drop-shadow(0px 0px 10px rgba(255,255,255,1.0));
+    font-family: 'Permanent Marker', cursive;
+}
+
+.skill .grid {
+    margin-left: 250px;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.skill .box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    display: inline-block;
+    margin-right: 50px;
+    border-radius: 100px;
+}
+
+.skill .box p {
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.skill .box img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    filter: drop-shadow(0px 0px 10px rgba(255,255,255,1.0));
+}
+
+/* contact */
+.contact {
+    width: 100vw;
+    height: 100vh;
+}
+
+.contact {
+    width: 100vw;
+    height: 100vh;
+}
+.contact .content {
+    margin-top: 20px; 
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 90vh;
+    /* border: 1px solid white;
+    border-radius: 10px; */
+}
+
+.contact .title {
+    margin: 50px 0 0 200px;
+    line-height: 80px;
+}
+.contact .title p {
+    width: 300px;
+    height: 80px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    filter: drop-shadow(0px 0px 10px rgba(255,255,255,1.0));
+    font-family: 'Permanent Marker', cursive;
+}
+.contact .form {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 50px; 
+}
+.contact .text p {
+    color: white;
+    margin-top: 70px;
+    text-align: left;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.content .twitter {
+    background: #55acee;
+    width: 150px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.contact .twitter .fab {
+    margin-right: 5px; 
+}
+
+.contact .twitter a {
+    color: white;
+    margin-top: 70px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+}
