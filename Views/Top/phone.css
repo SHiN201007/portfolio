@@ -6,20 +6,15 @@ body {
 }
 
 .container {
-    scroll-snap-type: y mandatory;
-    overflow:scroll;
-    height: 100vh;
-}
-
-.section {
-    scroll-snap-align: start;
+    width: 100%;
 }
 
 /* nav */
 .navbar {
-    height: 60px;
+    margin-top: 5px;
+    height: 30px;
     width: 100vw;
-    position: fixed;
+    /* position: fixed; */
 }
 
 .navbar .logo,
@@ -29,173 +24,165 @@ body {
 
 .logo {
     float: left;
-    margin-left: 70px;
+    margin-left: 20px;
 }
 .logo a {
     text-decoration: none;
     color: white;
-    font-size: 30px;
-    line-height: 90px;
+    font-size: 40px;
+    line-height: 50px;
     font-family: 'Permanent Marker', cursive;
     filter: drop-shadow(0px 0px 10px rgba(255,255,255,1.0));
 }
 
 .menu {
     float: right;
-    margin-right: 50px;
+    margin-right: 20px;
+    display: none;
 }
 .menu li {
     display: inline-block;
-    font-size: 30px;
-    margin-left: 50px;
+    font-size: 12px;
+    /* margin-left: 20px;  */
+    display: none;
 }
 .menu a {
     text-decoration: none;
     color: white;
-    line-height: 60px;
+    line-height: 10px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 /* top */
 .top_screen {
-    width: 100vw;
-    height: 100vh;
     z-index: 1;
     position: relative;
 }
 
 .top_image img{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 350px;
     background-repeat: no-repeat; 
+    margin: 0px;
 }
-
 .titleLabel {
     position: absolute;
     text-align: center;
     z-index: 2;
-    top: 40vh;
-    left: 29vw;
+    top: 160px;
+    left: 13%;
+    margin: 0px;
 }
 
 .titleLabel #title{
     margin: 0px;
     color: white;
-    letter-spacing: 40px;
-    font-size: 50px;
+    letter-spacing: 13px;
+    font-size: 30px;
     font-family: 'Permanent Marker', cursive;
     font-style: italic;
     filter: drop-shadow(0px 0px 10px rgba(255,255,255,1.0));
 }
-
 .titleLabel #label{
     margin: 0px;
     color: white;
-    letter-spacing: 40px;
-    font-size: 30px;
+    letter-spacing: 20px;
+    font-size: 20px;
     font-family: 'Noto Serif JP', serif;
     filter: drop-shadow(0px 0px 10px rgba(255,255,255,1.0));
 }
+
 /* null */
 .null {
-    height: 60px;
+    height: 0px;
  }
 
 /* about */
 .about {
     width: 100vw;
-    height: 100vh;
     position: relative;
 }
 
 .about .content {
-    margin-top: 20px; 
-    margin-left: 10vw;
-    margin-right: 10vw;
-    height: 80vh;
+    margin-top: 5px; 
+    margin-left: 5vw;
     /* border: 1px solid white;
     border-radius: 10px; */
 }
 
 .about .title {
-    margin: 100px 0 0 200px;
-    line-height: 80px;
+    margin: 0px;
 }
 .about .title p {
-    width: 300px;
-    height: 80px;
+    height: 0px;
     color: white;
-    font-size: 40px;
-    text-align: center;
-    border-bottom: 1px solid white;
+    font-size: 30px;
+    text-align: left;
     filter: drop-shadow(0px 0px 10px rgba(255,255,255,1.0));
     font-family: 'Permanent Marker', cursive;
 }
+.about .name {
+    margin-top: 70px;
+}
+.about .name p {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.about .text {
+    margin-top: 20px;
+    margin-left: 10px; 
+}
+.about .text p {
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Noto Serif JP', serif;
+}
 
 .about .image {
-    top: 200px;
-    right: 350px;
+    top: 5px;
+    right: 40px;
     position: absolute;
     filter: drop-shadow(0px 0px 10px rgba(255,255,255,1.0))
 }
 .about .image img{
-    width: 250px;
-    height: 250px;
-    border-radius: 125px;
-}
-
-.about .name {
-    margin: 100px 0 0 200px;
-}
-.about .name p {
-    width: 300px;
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.about .text {
-    margin: 100px 0 0 250px;
-}
-.about .text p {
-    color: white;
-    font-size: 20px;
-    text-align: left;
-    font-family: 'Noto Serif JP', serif;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
 }
 
 /* skill */
 .skill {
     width: 100vw;
-    height: 100vh;
 }
 .skill .content {
-    margin-top: 0px; 
-    margin-left: 10vw;
-    margin-right: 10vw;
-    height: 90vh;
-    /* border: 1px solid white;
-    border-radius: 10px; */
+    margin-top: 5px; 
+    margin-left: 5vw;
 }
-
 .skill .title {
-    margin: 0px 0 0 200px;
-    line-height: 80px;
+    margin: 0px;
 }
 .skill .title p {
     width: 300px;
-    height: 80px;
     color: white;
-    font-size: 40px;
-    text-align: center;
-    border-bottom: 1px solid white;
+    font-size: 30px;
+    text-align: left;
     filter: drop-shadow(0px 0px 10px rgba(255,255,255,1.0));
     font-family: 'Permanent Marker', cursive;
 }
 
+.skill .snap {
+    scroll-snap-type: x mandatory;
+    overflow:auto;
+    display:flex;
+    width: 210px;
+    height: 250px;
+}
+
 .skill .grid {
-    margin-left: 250px;
+    margin-left: 65px;
     margin-top: 20px; 
     margin-bottom: 20px; 
 }
@@ -203,9 +190,10 @@ body {
 .skill .box {
     width: 200px;
     height: 200px;
+    margin-right: 10px;
+    scroll-snap-align: start;/* scroll-snap */
     border: 2px solid white;
     display: inline-block;
-    margin-right: 50px;
     border-radius: 100px;
 }
 
@@ -224,49 +212,39 @@ body {
 /* contact */
 .contact {
     width: 100vw;
-    height: 100vh;
 }
 .contact .content {
-    margin-top: 20px; 
-    margin-left: 10vw;
-    margin-right: 10vw;
-    height: 90vh;
-    /* border: 1px solid white;
-    border-radius: 10px; */
+    margin-top: 5px; 
+    margin-left: 5vw;
 }
 
 .contact .title {
-    margin: 50px 0 0 200px;
-    line-height: 80px;
+    margin: 0px;
 }
 .contact .title p {
     width: 300px;
-    height: 80px;
     color: white;
     font-size: 40px;
-    text-align: center;
-    border-bottom: 1px solid white;
+    text-align: left;
     filter: drop-shadow(0px 0px 10px rgba(255,255,255,1.0));
     font-family: 'Permanent Marker', cursive;
 }
 .contact .form {
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-top: 50px; 
 }
 .contact .text p {
+    margin-right: 5vw;
     color: white;
-    margin-top: 70px;
     text-align: left;
     font-family: 'Noto Serif JP', serif;
 }
 
 .content .twitter {
     background: #55acee;
-    width: 150px;
-    padding: 10px 30px;
+    width: 120px;
+    padding: 7px 10px;
     border-radius: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 .contact .twitter .fab {
     margin-right: 5px; 
@@ -274,8 +252,8 @@ body {
 
 .contact .twitter a {
     color: white;
-    margin-top: 70px;
+    margin-top: 10px;
     text-align: center;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
 }
